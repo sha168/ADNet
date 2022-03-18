@@ -18,7 +18,7 @@ Download:
 Pre-processing is performed according to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation/tree/2f2a22b74890cb9ad5e56ac234ea02b9f1c7a535) and we follow the procedure on their github repository.
 
 ### Training
-1. Compile `./supervoxels/felzenszwalb_3d_cy.pyx` with cython and run `./supervoxels/generate_supervoxels.py` \
+1. Compile `./supervoxels/felzenszwalb_3d_cy.pyx` with cython (`python ./supervoxels/setup.py build_ext --inplace`) and run `./supervoxels/generate_supervoxels.py` \
 2. Download pretrained 3D ResNeXt weights from `<insert link>` (for 3D version) \
 3. Run `./script/train_<abd, cmr>_<2D, 3D>.sh` 
 
