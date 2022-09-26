@@ -30,7 +30,7 @@ Pre-processing is performed according to [Ouyang et al.](https://github.com/chen
 
 ### Training
 1. Compile `./supervoxels/felzenszwalb_3d_cy.pyx` with cython (`python ./supervoxels/setup.py build_ext --inplace`) and run `./supervoxels/generate_supervoxels.py` 
-2. Download pretrained 3D ResNeXt weights from `<insert link>` (for 3D version) 
+2. Download pretrained 3D ResNeXt weights. We use the pre-trained weights in `resnext-101-kinetics.pth` from [Hara et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Hara_Can_Spatiotemporal_3D_CVPR_2018_paper.pdf) which is available on their [github repository](https://github.com/kenshohara/3D-ResNets-PyTorch). Note: Follow the link for the *old* pretrained weights. 
 3. Run `./script/train_<abd, cmr>_<2D, 3D>.sh` 
 
 ### Inference
